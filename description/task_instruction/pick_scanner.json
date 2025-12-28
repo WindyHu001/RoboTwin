@@ -1,0 +1,40 @@
+{
+    "full_description": "A scanner rests on the desk. A red sphere marks the desired grasp point on the scanner. Use the arm to <grab the scanner precisely at the red point> and lift it.",
+    "schema": "{A} notifies the scanner, {a} notifies the arm to grab the scanner at the red sphere contact point",
+    "preference": "num of words should not exceed 10",
+    "seen": [
+      "Direct {a} to red cue on {A}, lift.",
+      "Use {a} to grip {A} at red point.",
+      "Align {a} with red spot on {A}, raise.",
+      "Guide {a} to red marker on {A}, pick up.",
+      "Place {a} onto {A}'s red cue, lift.",
+      "Seize {A} at red sphere using {a}.",
+      "Follow red guide on {A} with {a}, lift.",
+      "Clamp {A} where red dot shows, raise.",
+      "Position {a} at red mark on {A}, pick.",
+      "Hold {A} at red-labeled point via {a}.",
+      "Move {a} toward red cue on {A}, lift it.",
+      "Target the red grasp zone on {A} with {a}.",
+      "Pinch {A} at the red cue using {a}.",
+      "Capture {A} by red-marked area, lift.",
+      "Center {a} on {A}'s red sphere, pick.",
+      "Touch {A} at red point with {a}, raise.",
+      "Grip {A} at sphere-guided spot using {a}.",
+      "Bring {a} to red cue on {A}, lift smoothly.",
+      "Use {a} on red-highlighted region of {A}.",
+      "Lift {A} after aligning {a} to red cue."
+    ],
+    "unseen": [
+      "Aim {a} at {A}'s red cue, lift gently.",
+      "Let {a} capture {A} at red sphere point.",
+      "Match {a} to red contact on {A}, raise.",
+      "Touch down {a} on red cue of {A}, pick.",
+      "Snap {a} onto {A}'s red dot, lift upward.",
+      "Trace red marker on {A} using {a}, lift.",
+      "Engage {a} with {A}'s red point, elevate.",
+      "Seek red-guided grasp on {A} via {a}.",
+      "Fix {a} at red contact zone on {A}, lift.",
+      "Land {a} on red grasp point of {A}, raise."
+    ]
+  }
+  

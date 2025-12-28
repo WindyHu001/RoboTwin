@@ -164,7 +164,7 @@ def setup_task_config(task_name):
     Returns:
         tuple: (Task instance, task configuration dictionary)
     """
-    task = class_decorator_gen(task_name)
+    task = class_decorator_env(task_name)
     task_config_path = f"./task_config/{task_name}.yml"
 
     if not os.path.isfile(task_config_path):
@@ -315,3 +315,14 @@ def run(TASK_ENV, args, check_num=10):
     print(f'error_num: {error_num}')
 
     return suc_num / check_num, error_list[max_error_index], max_error_count, run_records
+
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) < 2:
+        print("Usage: python test_gen_code.py <task_name>")
+        sys.exit(1)
+
+    task_name = sys.argv[1]
+
+    task, args = setup_task_config(task_name)
+    run(task, args, check_num=10)

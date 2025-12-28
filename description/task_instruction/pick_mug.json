@@ -1,0 +1,30 @@
+{
+    "full_description": "A mug is on the table. A red sphere marks the desired grasp point on the mug. Use the arm to <grasp the mug exactly at the red point> and lift it.",
+    "schema": "{A} notifies the mug, {a} notifies the arm to grab the mug at the red sphere contact point",
+    "preference": "num of words should not exceed 10",
+    "seen": [
+      "Bring {a} to red cue on {A}, lift gently.",
+      "Use {a} to clasp {A} at red mark, raise.",
+      "Align {a} to red spot on {A}, pick up.",
+      "Follow red sphere on {A} with {a}, lift mug.",
+      "Touch red target on {A} using {a}, elevate.",
+      "Grip {A} where red dot shows, lift smoothly.",
+      "Center {a} on {A}'s red cue, raise mug.",
+      "Move {a} toward {A}'s red point, lift upward.",
+      "Clamp {A} at red cue with {a}, pick up.",
+      "Guide {a} to {A}'s red marker, lift cleanly."
+    ],
+    "unseen": [
+      "Aim {a} at red cue on {A}, lift firmly.",
+      "Seize {A} at red point via {a}, pick up.",
+      "Direct {a} to red hint on {A}, raise mug.",
+      "Place {a} onto {A}'s red guide, lift.",
+      "Use red cue on {A} to position {a}, elevate.",
+      "Land {a} at red spot on {A}, lift straight.",
+      "Latch {a} onto {A}'s red mark, lift gently.",
+      "Approach {A}'s red target with {a}, pick up.",
+      "Anchor {a} at red cue on {A}, raise steadily.",
+      "Contact {A}'s red point with {a}, lift upward."
+    ]
+  }
+  

@@ -1,0 +1,40 @@
+{
+    "full_description": "There is a hammer on the table. A red sphere marks the desired contact point on the hammer. Use the arm to <grab the hammer exactly at the red point> and <pick it up>.",
+    "schema": "{A} notifies the hammer, {a} notifies the arm to grab the hammer at the red sphere contact point",
+    "preference": "num of words should not exceed 10",
+    "seen": [
+      "Use {a} to grab {A} at red point, lift it.",
+      "Grab {A} at red point, then pick up.",
+      "Align {a} to red mark on {A}, lift hammer.",
+      "Follow red sphere, grasp {A} with {a}, lift up.",
+      "Move {a} to red dot on {A}, pick it up.",
+      "Grip {A} at red cue using {a}, lift hammer.",
+      "Use {a} on red-highlighted {A}, then lift it.",
+      "Target red point on {A} with {a}, pick up.",
+      "Place {a} at red mark on {A}, lift hammer.",
+      "Clamp {A} at red spot using {a}, pick it up.",
+      "Grasp {A} where red sphere shows, then lift it.",
+      "Hold {A} at red point with {a}, raise hammer.",
+      "Use {a} to pinch {A} at red, lift up.",
+      "Grab {A} on red-guided point with {a}, pick it up.",
+      "Align gripper to red cue on {A}, lift hammer.",
+      "Follow red indicator on {A} using {a}, pick up.",
+      "Capture {A} at red handle region, then lift it.",
+      "Use {a} toward red point on {A}, raise hammer.",
+      "Grip {A} where red light appears, then lift it.",
+      "Locate red dot on {A} with {a}, pick up."
+    ],
+    "unseen": [
+      "Seize {A} at red point with {a}, lift it.",
+      "Guide {a} to red sphere on {A}, pick up.",
+      "Lock {A} at red cue using {a}, lift hammer.",
+      "Place {a} above red mark on {A}, lift it.",
+      "Use red sphere as grasp point on {A}, pick up.",
+      "Catch {A} at red-highlighted area, then lift it.",
+      "Grip {A} at red dot with {a}, raise hammer.",
+      "Move {a} along red guide on {A}, lift it.",
+      "Center {a} on red point of {A}, pick up.",
+      "Hold {A} by red cue using {a}, lift hammer."
+    ]
+  }
+  

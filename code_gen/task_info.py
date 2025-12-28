@@ -29,9 +29,206 @@ TASK_NAME = {
 }
 """
 
+PICK_SCREWDRIVER = {  
+    "task_name": "pick_screwdriver",  
+    "task_description": "Pick up the screwdriver from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_screwdriver(pick_screwdriver):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.screwdriver": {  
+            "name": "screwdriver",  
+            "description": "The screwdriver that needs to be picked up.",  
+            "modelname": "032_screwdriver"  # Use appropriate model ID  
+        }  
+    }  
+}
+
+PICK_DRILL = {  
+    "task_name": "pick_drill",  
+    "task_description": "Pick up the drill from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_drill(pick_drill):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.drill": {  
+            "name": "drill",  
+            "description": "The drill that needs to be picked up.",  
+            "modelname": "030_Drill"  
+        }  
+    }  
+}
+
+PICK_SCANNER = {  
+    "task_name": "pick_scanner",  
+    "task_description": "Pick up the scanner from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_scanner(pick_scanner):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.scanner": {  
+            "name": "scanner",  
+            "description": "The scanner that needs to be picked up.",  
+            "modelname": "024_Scanner"  
+        }  
+    }  
+}
+
+PICK_BOTTLE = {  
+    "task_name": "pick_bottle",  
+    "task_description": "Pick up the bottle from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_bottle(pick_bottle):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.bottle": {  
+            "name": "bottle",  
+            "description": "The bottle that needs to be picked up.",  
+            "modelname": "001_bottle"  
+        }  
+    }  
+}
+
+PICK_MUG = {  
+    "task_name": "pick_mug",  
+    "task_description": "Pick up the mug from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_drill(pick_mug):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.scanner": {  
+            "name": "mug",  
+            "description": "The mug that needs to be picked up.",  
+            "modelname": "039_mug"  
+        }  
+    }  
+}
+
+PICK_HAMMER = {  
+    "task_name": "pick_hammer",  
+    "task_description": "Pick up the hammer from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_hammer(pick_hammer):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.hammer": {  
+            "name": "hammer",  
+            "description": "The hammer that needs to be picked up.",  
+            "modelname": "020_hammer"  
+        }  
+    }  
+}
+
+MOVE_HAMMER_PAD = {  
+    "task_name": "move_hammer_pad",  
+    "task_description": "Use one arm to pick the hammer and place it onto the pad.\
+                        Grasp the hammer. Get the target pose for placing the hammer, and place the hammer at the target pose.",  
+    "current_code": """  
+                class gpt_move_hammer_pad(move_hammer_pad):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.hammer": {  
+            "name": "hammer",  
+            "description": "The hammer that needs to be moved to the pad.",  
+            "modelname": "020_hammer",  
+        },  
+        "self.pad": {  
+            "name": "pad",  
+            "description": "The pad where the hammer should be placed.",  
+            "modelname": "sapien-block1",  
+        },  
+    }  
+}
+
+MOVE_SCREWDRIVER_PAD = {  
+    "task_name": "move_screwdriver_pad",  
+    "task_description": "Use one arm to pick the screwdriver and place it onto the pad.\
+                        Grasp the screwdriver. Get the target pose for placing the screwdriver, and place the screwdriver at the target pose.",  
+    "current_code": """  
+                class gpt_move_screwdriver_pad(move_screwdriver_pad):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.screwdriver": {  
+            "name": "screwdriver",  
+            "description": "The screwdriver that needs to be moved to the pad.",  
+            "modelname": "032_screwdriver",  
+        },  
+        "self.pad": {  
+            "name": "pad",  
+            "description": "The pad where the screwdriver should be placed.",  
+            "modelname": "sapien-block1",  
+        },  
+    }  
+}
+
+MOVE_SCANNER_PAD = {  
+    "task_name": "move_scanner_pad",  
+    "task_description": "Use one arm to pick the scanner and place it onto the pad.\
+                        Grasp the scanner. Get the target pose for placing the scanner, and place the scanner at the target pose.",  
+    "current_code": """  
+                class gpt_move_scanner_pad(move_scanner_pad):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.scanner": {  
+            "name": "scanner",  
+            "description": "The scanner that needs to be moved to the pad.",  
+            "modelname": "024_scanner",   # <-- fill with your actual scanner model name  
+        },  
+        "self.pad": {  
+            "name": "pad",  
+            "description": "The pad where the scanner should be placed.",  
+            "modelname": "sapien-block1",  
+        },  
+    }  
+}
+
+MOVE_MUG_PAD = {  
+    "task_name": "move_mug_pad",  
+    "task_description": "Use one arm to pick the mug and place it onto the pad.\
+                        Grasp the mug. Get the target pose for placing the mug, and place the mug at the target pose.",  
+    "current_code": """  
+                class gpt_move_mug_pad(move_mug_pad):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.mug": {  
+            "name": "mug",  
+            "description": "The mug that needs to be moved to the pad.",  
+            "modelname": "039_mug",   # <-- fill with your actual mug model name  
+        },  
+        "self.pad": {  
+            "name": "pad",  
+            "description": "The pad where the mug should be placed.",  
+            "modelname": "sapien-block1",  
+        },  
+    }  
+}
+
+
+
 ################## Known Tasks ##################
 # These tasks are used to debug and iterate on prompt design.
 # Prompt instructions have been specifically adjusted for them.
+
 
 
 BEAT_BLOCK_HAMMER = {

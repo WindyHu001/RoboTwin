@@ -1,0 +1,40 @@
+{
+    "full_description": "There is a screwdriver on the desk. A red sphere marks the desired contact point on the screwdriver. Use the arm to <grab the screwdriver exactly at the red point> to pick it up.",
+    "schema": "{A} notifies the screwdriver, {a} notifies the arm to grab the screwdriver at the red sphere contact point",
+    "preference": "num of words should not exceed 10",
+    "seen": [
+      "Use {a} to grab {A} at red point.",
+      "Grab {A} at red point to pick up.",
+      "Align {a} to red mark on {A} and lift.",
+      "Follow red sphere, grasp {A} with {a}.",
+      "Move {a} to red dot on {A}, pick up.",
+      "Grip {A} at red cue using {a}.",
+      "Use {a} on red-marked {A} to lift.",
+      "Target red point on {A} with {a}.",
+      "Place {a} at red mark on {A}.",
+      "Clamp {A} at red spot using {a}.",
+      "Grasp {A} where red sphere shows.",
+      "Hold {A} at red point with {a}.",
+      "Use {a} to pinch {A} at red.",
+      "Grab {A} on red-guided point with {a}.",
+      "Align gripper to red cue on {A}.",
+      "Follow red indicator on {A} using {a}.",
+      "Capture {A} at red handle region.",
+      "Use {a} toward red point on {A}.",
+      "Grip {A} where red light appears.",
+      "Locate red dot on {A} with {a}."
+    ],
+    "unseen": [
+      "Seize {A} at red point with {a}.",
+      "Guide {a} to red sphere on {A}.",
+      "Lock {A} at red cue using {a}.",
+      "Place {a} above red mark on {A}.",
+      "Use red sphere as grasp point on {A}.",
+      "Catch {A} at red-highlighted area.",
+      "Grip {A} at red dot with {a}.",
+      "Move {a} along red guide on {A}.",
+      "Center {a} on red point of {A}.",
+      "Hold {A} by red cue using {a}."
+    ]
+}
+  

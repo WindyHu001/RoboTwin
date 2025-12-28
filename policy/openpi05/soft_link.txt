@@ -1,0 +1,2 @@
+ln -s ../openpi/RLDS_data RLDS_data   2>/dev/null || true
+ln -s ../openpi/lerobot   lerobot     2>/dev/null || true

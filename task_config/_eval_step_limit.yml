@@ -48,3 +48,8 @@ stack_bowls_three: 1200
 stack_bowls_two: 900
 stamp_seal: 400
 turn_switch: 400
+pick_screwdriver: 400
+pick_mug: 400
+pick_hammer: 400
+pick_scanner: 400
+pick_bottle: 1000

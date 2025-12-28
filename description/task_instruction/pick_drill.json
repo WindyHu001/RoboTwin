@@ -1,0 +1,39 @@
+{
+  "full_description": "There is a drill on the table. A red sphere marks the desired grasp point on the drill. Use the arm to <grab the drill exactly at the red point> and <lift it up>.",
+  "schema": "{A} notifies the drill, {a} notifies the arm to grab the drill at the red sphere contact point",
+  "preference": "num of words should not exceed 10",
+  "seen": [
+    "Guide {a} to red cue, raise {A}.",
+    "Lift {A} by its red-marked point using {a}.",
+    "Use {a} to clasp {A} at red cue.",
+    "Secure {A} at red spot with {a}, then lift.",
+    "Move {a} onto red sphere of {A}, pick up.",
+    "Target red grip point on {A} with {a}, lift.",
+    "Use {a} on {A}'s red cue to hoist.",
+    "Center {a} on red handle area of {A}, lift.",
+    "Align {a} to red dot on {A}, raise it.",
+    "Clamp {A} at red cue via {a}, lift upward.",
+    "Pinch {A} exactly at red sphere using {a}.",
+    "Locate red grasp zone on {A} with {a}, lift.",
+    "Let {a} follow red cue on {A}, pick up.",
+    "Grab {A} precisely where red marks, lift cleanly.",
+    "Hold {A} at red-highlighted area with {a}, lift.",
+    "Bring {a} to red-guided grasp point on {A}.",
+    "Grip {A} along its red cue using {a}, raise.",
+    "Use {a} to lock onto {A}'s red point, lift.",
+    "Actuate {a} toward {A}'s red sphere, pick upward.",
+    "Place {a} over red contact on {A}, lift."
+  ],
+  "unseen": [
+    "Catch {A} at red cue using {a}, lift it.",
+    "Let {a} grasp {A} at red spot, elevate.",
+    "Seize {A} where red marks with {a}, lift.",
+    "Approach {A}'s red point using {a}, raise tool.",
+    "Pick {A} from red-cued region via {a}.",
+    "Guide {a} along red mark on {A}, lift firmly.",
+    "Center {a} on {A}'s red cue, lift gently.",
+    "Hold {A} at red sphere using {a}, elevate.",
+    "Clamp red-indicated point on {A} with {a}, lift.",
+    "Grip {A} by red-guided location via {a}, raise."
+  ]
+}
