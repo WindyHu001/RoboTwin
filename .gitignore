@@ -28,3 +28,15 @@ envs/curobo/*
 
 /*.json*
 /*.txt
+
+# pi0
+policy/pi0/assets/
+policy/pi0/processed_data/
+policy/pi0/training_data/
+policy/pi0/wandb/
+
+# pi0.5
+policy/pi0.5/assets/
+policy/pi0.5/processed_data/
+policy/pi0.5/training_data/
+policy/pi0.5/wandb/
