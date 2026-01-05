@@ -1,0 +1,22 @@
+MOVE_SCREWDRIVER_TOOLBOX = {  
+    "task_name": "move_screwdriver_toolbox",  
+    "task_description": "Use one arm to pick the screwdriver and place it onto the toolbox.\
+                        Grasp the screwdriver. Get the target pose for placing the screwdriver, and place the screwdriver at the target pose.",  
+    "current_code": """  
+                class gpt_move_screwdriver_toolbox(move_screwdriver_toolbox):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.screwdriver": {  
+            "name": "screwdriver",  
+            "description": "The screwdriver that needs to be moved to the toolbox.",  
+            "modelname": "032_screwdriver",   
+        },  
+        "self.toolbox": {  
+            "name": "toolbox",  
+            "description": "The toolbox where the screwdriver should be placed.",  
+            "modelname": "sapien-block1",  
+        },  
+    }  
+}

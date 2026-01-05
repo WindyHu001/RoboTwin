@@ -1,0 +1,40 @@
+{
+    "full_description": "There is a hammer on the table. Use the arm to <grab the hammer at the mid area of the handle> and <pick it up>.",
+    "schema": "{A} notifies the hammer, {a} notifies the arm to grab the hammer at the middle part of the handle",
+    "preference": "num of words should not exceed 10",
+    "seen": [
+      "Use {a} to grab {A} at mid handle, lift.",
+      "Grab {A} at the handle middle, pick up.",
+      "Grip {A} around mid handle, lift it.",
+      "Grasp {A} on the mid handle area, lift.",
+      "Move {a} to {A} handle center, pick up.",
+      "Hold {A} mid-handle with {a}, raise it.",
+      "Use {a} to seize {A} at handle middle, lift.",
+      "Target the handle midpoint of {A}, pick up.",
+      "Clamp {A} at the handle midsection, lift.",
+      "Pick up {A} from the handle middle.",
+      "Grasp {A} at mid handle region, lift it.",
+      "Secure {A} at the handle center, lift.",
+      "Use {a} to pinch {A} mid handle, lift.",
+      "Grab {A} from the handle middle, pick up.",
+      "Grip {A} at the mid-handle zone, lift.",
+      "Lift {A} by holding mid handle.",
+      "Take {A} at handle midpoint, lift.",
+      "Use {a} to hold {A} at mid handle, lift.",
+      "Grasp {A} near handle center, raise it.",
+      "Capture {A} at the middle of handle, lift."
+    ],
+    "unseen": [
+      "Seize {A} at handle middle using {a}, lift.",
+      "Guide {a} to {A} handle midpoint, pick up.",
+      "Lock {A} at the mid handle, lift it.",
+      "Place {a} on {A} handle center, lift.",
+      "Grab {A} by the mid handle region, pick up.",
+      "Catch {A} at handle midsection, then lift.",
+      "Grip {A} at handle center, raise it.",
+      "Move {a} to {A} mid handle, lift.",
+      "Center {a} on {A} handle middle, lift.",
+      "Hold {A} at handle midpoint, lift it."
+    ]
+  }
+  

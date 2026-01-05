@@ -1,0 +1,40 @@
+{
+    "full_description": "There is a hammer on the table. Use the arm to <grab the hammer at the topPP/top area near the hammer head> and <pick it up>.",
+    "schema": "{A} notifies the hammer, {a} notifies the arm to grab the hammer at the upper part near the head",
+    "preference": "num of words should not exceed 10",
+    "seen": [
+      "Use {a} to grab {A} near the head, lift it.",
+      "Grab {A} at the top end, then pick up.",
+      "Grip {A} by the hammer head, lift it.",
+      "Grasp {A} on the upper part, lift up.",
+      "Move {a} to the top of {A}, pick up.",
+      "Hold {A} near the head with {a}, raise it.",
+      "Use {a} to seize {A} at the top, lift.",
+      "Target the upper end of {A}, pick up.",
+      "Clamp {A} close to the head, lift it.",
+      "Pick up {A} by its top section.",
+      "Grasp {A} at the head area, lift it.",
+      "Secure {A} at the upper portion, lift.",
+      "Use {a} to pinch {A} near the head, lift.",
+      "Grab {A} from the upper side, pick up.",
+      "Grip {A} at the top region, lift it.",
+      "Lift {A} by grasping near the head.",
+      "Take {A} at its upper end, lift.",
+      "Use {a} to hold {A} at the head, lift.",
+      "Grasp {A} close to the top, raise it.",
+      "Capture {A} near the hammer head, lift."
+    ],
+    "unseen": [
+      "Seize {A} near the head using {a}, lift.",
+      "Guide {a} to the top of {A}, pick up.",
+      "Lock {A} at the upper end, lift it.",
+      "Place {a} on the head side of {A}, lift.",
+      "Grab {A} by the head region, pick up.",
+      "Catch {A} at the top area, then lift.",
+      "Grip {A} near the head, raise it.",
+      "Move {a} to the upper part of {A}, lift.",
+      "Center {a} on the top end of {A}, lift.",
+      "Hold {A} at the head end, lift it."
+    ]
+  }
+  

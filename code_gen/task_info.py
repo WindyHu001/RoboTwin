@@ -46,6 +46,57 @@ PICK_SCREWDRIVER = {
     }  
 }
 
+PICK_SCREWDRIVER_LG_top = {  
+    "task_name": "pick_screwdriver_LG_top",  
+    "task_description": "Pick up the screwdriver from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_screwdriver_LG_top(pick_screwdriver_LG_top):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.screwdriver": {  
+            "name": "screwdriver",  
+            "description": "The screwdriver that needs to be picked up.",  
+            "modelname": "032_screwdriver"  # Use appropriate model ID  
+        }  
+    }  
+}
+
+PICK_SCREWDRIVER_LG_MID = {  
+    "task_name": "pick_screwdriver_LG_mid",  
+    "task_description": "Pick up the screwdriver from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_screwdriver_LG_mid(pick_screwdriver_LG_mid):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.screwdriver": {  
+            "name": "screwdriver",  
+            "description": "The screwdriver that needs to be picked up.",  
+            "modelname": "032_screwdriver"  # Use appropriate model ID  
+        }  
+    }  
+}
+
+PICK_SCREWDRIVER_LG_BOTTOM = {  
+    "task_name": "pick_screwdriver_LG_bottom",  
+    "task_description": "Pick up the screwdriver from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_screwdriver_LG_bottom(pick_screwdriver_LG_bottom):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.screwdriver": {  
+            "name": "screwdriver",  
+            "description": "The screwdriver that needs to be picked up.",  
+            "modelname": "032_screwdriver"  # Use appropriate model ID  
+        }  
+    }  
+}
+
 PICK_DRILL = {  
     "task_name": "pick_drill",  
     "task_description": "Pick up the drill from the table using one arm.",  
@@ -80,6 +131,57 @@ PICK_SCANNER = {
     }  
 }
 
+PICK_SCANNER_LG_TOP = {  
+    "task_name": "pick_scanner_LG_top",  
+    "task_description": "Pick up the scanner from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_scanner_LG_top(pick_scanner_LG_top):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.scanner": {  
+            "name": "scanner",  
+            "description": "The scanner that needs to be picked up.",  
+            "modelname": "024_Scanner"  
+        }  
+    }  
+}
+
+PICK_SCANNER_LG_MID = {  
+    "task_name": "pick_scanner_LG_mid",  
+    "task_description": "Pick up the scanner from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_scanner_LG_mid(pick_scanner_LG_mid):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.scanner": {  
+            "name": "scanner",  
+            "description": "The scanner that needs to be picked up.",  
+            "modelname": "024_Scanner"  
+        }  
+    }  
+}
+
+PICK_SCANNER_LG_BOTTOM = {  
+    "task_name": "pick_scanner_LG_bottom",  
+    "task_description": "Pick up the scanner from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_scanner_LG_bottom(pick_scanner_LG_bottom):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.scanner": {  
+            "name": "scanner",  
+            "description": "The scanner that needs to be picked up.",  
+            "modelname": "024_Scanner"  
+        }  
+    }  
+}
+
 PICK_BOTTLE = {  
     "task_name": "pick_bottle",  
     "task_description": "Pick up the bottle from the table using one arm.",  
@@ -96,6 +198,7 @@ PICK_BOTTLE = {
         }  
     }  
 }
+
 
 PICK_MUG = {  
     "task_name": "pick_mug",  
@@ -119,6 +222,57 @@ PICK_HAMMER = {
     "task_description": "Pick up the hammer from the table using one arm.",  
     "current_code": """  
                 class gpt_pick_hammer(pick_hammer):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.hammer": {  
+            "name": "hammer",  
+            "description": "The hammer that needs to be picked up.",  
+            "modelname": "020_hammer"  
+        }  
+    }  
+}
+
+PICK_HAMMER_LG_TOP = {  
+    "task_name": "pick_hammer_LG_top",  
+    "task_description": "Pick up the hammer from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_hammer_LG_top(pick_hammer_LG_top):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.hammer": {  
+            "name": "hammer",  
+            "description": "The hammer that needs to be picked up.",  
+            "modelname": "020_hammer"  
+        }  
+    }  
+}
+
+PICK_HAMMER_LG_MID = {  
+    "task_name": "pick_hammer_LG_mid",  
+    "task_description": "Pick up the hammer from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_hammer_LG_mid(pick_hammer_LG_mid):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.hammer": {  
+            "name": "hammer",  
+            "description": "The hammer that needs to be picked up.",  
+            "modelname": "020_hammer"  
+        }  
+    }  
+}
+
+PICK_HAMMER_LG_BOTTOM = {  
+    "task_name": "pick_hammer_LG_bottom",  
+    "task_description": "Pick up the hammer from the table using one arm.",  
+    "current_code": """  
+                class gpt_pick_hammer_LG_bottom(pick_hammer_LG_bottom):  
                     def play_once(self):  
                         pass  
                 """,  
@@ -195,6 +349,75 @@ MOVE_SCANNER_PAD = {
         "self.pad": {  
             "name": "pad",  
             "description": "The pad where the scanner should be placed.",  
+            "modelname": "sapien-block1",  
+        },  
+    }  
+}
+
+MOVE_HAMMER_TOOLBOX = {  
+    "task_name": "move_hammer_toolbox",  
+    "task_description": "Use one arm to pick the hammer and place it onto the toolbox.\
+                        Grasp the hammer. Get the target pose for placing the hammer, and place the hammer at the target pose.",  
+    "current_code": """  
+                class gpt_move_hammer_toolbox(move_hammer_toolbox):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.hammer": {  
+            "name": "hammer",  
+            "description": "The hammer that needs to be moved to the toolbox.",  
+            "modelname": "020_hammer",   
+        },  
+        "self.toolbox": {  
+            "name": "toolbox",  
+            "description": "The toolbox where the hammer should be placed.",  
+            "modelname": "sapien-block1",  
+        },  
+    }  
+}
+
+MOVE_SCANNER_TOOLBOX = {  
+    "task_name": "move_scanner_toolbox",  
+    "task_description": "Use one arm to pick the scanner and place it onto the toolbox.\
+                        Grasp the scanner. Get the target pose for placing the scanner, and place the scanner at the target pose.",  
+    "current_code": """  
+                class gpt_move_scanner_toolbox(move_scanner_toolbox):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.scanner": {  
+            "name": "scanner",  
+            "description": "The scanner that needs to be moved to the toolbox.",  
+            "modelname": "024_scanner",   # <-- fill with your actual scanner model name  
+        },  
+        "self.toolbox": {  
+            "name": "toolbox",  
+            "description": "The toolbox where the scanner should be placed.",  
+            "modelname": "sapien-block1",  
+        },  
+    }  
+}
+
+MOVE_SCREWDRIVER_TOOLBOX = {  
+    "task_name": "move_screwdriver_toolbox",  
+    "task_description": "Use one arm to pick the screwdriver and place it onto the toolbox.\
+                        Grasp the screwdriver. Get the target pose for placing the screwdriver, and place the screwdriver at the target pose.",  
+    "current_code": """  
+                class gpt_move_screwdriver_toolbox(move_screwdriver_toolbox):  
+                    def play_once(self):  
+                        pass  
+                """,  
+    "actor_list": {  
+        "self.screwdriver": {  
+            "name": "screwdriver",  
+            "description": "The screwdriver that needs to be moved to the toolbox.",  
+            "modelname": "032_screwdriver",   
+        },  
+        "self.toolbox": {  
+            "name": "toolbox",  
+            "description": "The toolbox where the screwdriver should be placed.",  
             "modelname": "sapien-block1",  
         },  
     }  

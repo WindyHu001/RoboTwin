@@ -53,3 +53,4 @@ pick_mug: 400
 pick_hammer: 400
 pick_scanner: 400
 pick_bottle: 1000
+move_hammer_pad: 800

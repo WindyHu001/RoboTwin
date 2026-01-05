@@ -1,0 +1,39 @@
+{
+    "full_description": "There is a scanner on the table. Use the arm to <grab the scanner at the bottom area> and <pick it up>.",
+    "schema": "{A} notifies the scanner, {a} notifies the arm to grab the scanner at the lower part",
+    "preference": "num of words should not exceed 10",
+    "seen": [
+      "Use {a} to grab {A} at bottom area, lift.",
+      "Grab {A} near the bottom, pick up.",
+      "Grip {A} at the lower edge, lift it.",
+      "Grasp {A} on the lower area, lift.",
+      "Move {a} to {A} bottom area, pick up.",
+      "Hold {A} low with {a}, raise it.",
+      "Use {a} to seize {A} near bottom, lift.",
+      "Target the lower part of {A}, pick up.",
+      "Clamp {A} close to the bottom, lift it.",
+      "Pick up {A} from the bottom area.",
+      "Grasp {A} at lower region, lift it.",
+      "Secure {A} at the bottom portion, lift.",
+      "Use {a} to pinch {A} near bottom, lift.",
+      "Grab {A} from the lower side, pick up.",
+      "Grip {A} at the bottom region, lift.",
+      "Lift {A} by holding the bottom area.",
+      "Take {A} at the lower end, lift.",
+      "Use {a} to hold {A} at bottom, lift.",
+      "Grasp {A} close to the bottom, raise it.",
+      "Capture {A} near the bottom area, lift."
+    ],
+    "unseen": [
+      "Seize {A} near bottom using {a}, lift.",
+      "Guide {a} to the bottom of {A}, pick up.",
+      "Lock {A} at the lower area, lift it.",
+      "Place {a} on the bottom side of {A}, lift.",
+      "Grab {A} by the bottom region, pick up.",
+      "Catch {A} at the lower area, then lift.",
+      "Grip {A} near bottom, raise it.",
+      "Move {a} to {A} lower area, lift.",
+      "Center {a} on the bottom area of {A}, lift.",
+      "Hold {A} at the bottom area, lift it."
+    ]
+  }

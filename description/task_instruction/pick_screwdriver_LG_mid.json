@@ -1,0 +1,39 @@
+{
+    "full_description": "There is a screwdriver on the table. Use the arm to <grab the screwdriver at the mid area> and <pick it up>.",
+    "schema": "{A} notifies the screwdriver, {a} notifies the arm to grab the screwdriver at the middle part",
+    "preference": "num of words should not exceed 10",
+    "seen": [
+      "Use {a} to grab {A} at mid area, lift.",
+      "Grab {A} at the middle, pick up.",
+      "Grip {A} around the center, lift it.",
+      "Grasp {A} on the mid area, lift.",
+      "Move {a} to {A} center area, pick up.",
+      "Hold {A} at center with {a}, raise it.",
+      "Use {a} to seize {A} at mid area, lift.",
+      "Target the middle of {A}, pick up.",
+      "Clamp {A} at the central area, lift.",
+      "Pick up {A} from the mid area.",
+      "Grasp {A} at center region, lift it.",
+      "Secure {A} at the middle portion, lift.",
+      "Use {a} to pinch {A} at center, lift.",
+      "Grab {A} from the middle, pick up.",
+      "Grip {A} at the mid region, lift.",
+      "Lift {A} by holding the center.",
+      "Take {A} at the mid area, lift.",
+      "Use {a} to hold {A} at center, lift.",
+      "Grasp {A} near the middle, raise it.",
+      "Capture {A} at the center area, lift."
+    ],
+    "unseen": [
+      "Seize {A} at center using {a}, lift.",
+      "Guide {a} to the middle of {A}, pick up.",
+      "Lock {A} at the mid area, lift it.",
+      "Place {a} on the center of {A}, lift.",
+      "Grab {A} by the central region, pick up.",
+      "Catch {A} at mid area, then lift.",
+      "Grip {A} at the center, raise it.",
+      "Move {a} to {A} mid area, lift.",
+      "Center {a} on the middle of {A}, lift.",
+      "Hold {A} at the center area, lift it."
+    ]
+  }

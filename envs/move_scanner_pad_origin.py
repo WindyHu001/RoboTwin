@@ -4,8 +4,7 @@ import sapien
 from ._GLOBAL_CONFIGS import *  
 import imgaug.augmenters as iaa  
 import math
-from sapien import Pose
-
+  
   
 class move_scanner_pad(Base_Task):  
   
@@ -21,118 +20,6 @@ class move_scanner_pad(Base_Task):
         c = math.cos(half)
         return [c, ax * s, ay * s, az * s]
 
-    def build_toolbox_2x2(self,task,
-                        center=(0.18, 0.10, 0.76),   # xyz of table surface (z ~ 0.76 in your tasks)
-                        outer_xy=(0.22, 0.16),        # total footprint (L, W)
-                        base_thk=0.01,
-                        wall_thk=0.008,
-                        wall_h=0.06,
-                        color=(0.2, 0.2, 0.2),
-                        name_prefix="toolbox"):
-        """
-        Build a static toolbox with 4 cells (2x2) using primitive boxes.
-        Returns:
-        parts: list of created actors (base + walls)
-        cell_aabbs: list[(mn, mx)] length=4, world AABB for each cell interior
-        cell_centers: list[np.array] length=4, world xyz center targets (slightly above floor)
-        """
-
-        cx, cy, cz = center
-        L, W = outer_xy
-
-        parts = []
-
-        # ---- base plate ----
-        base_half = (L/2, W/2, base_thk/2)
-        base_pose = sapien.Pose([cx, cy, cz + base_thk/2], [1, 0, 0, 0])
-        parts.append(create_box(
-            scene=task,
-            pose=base_pose,
-            half_size=base_half,
-            color=color,
-            name=f"{name_prefix}_base",
-            is_static=True,
-        ))
-
-        # Common z center for walls
-        wall_zc = cz + base_thk + wall_h/2
-
-        # ---- outer walls ----
-        # left / right walls
-        side_half = (wall_thk/2, W/2, wall_h/2)
-        for tag, x in [("L", cx - L/2 + wall_thk/2), ("R", cx + L/2 - wall_thk/2)]:
-            parts.append(create_box(
-                scene=task,
-                pose=sapien.Pose([x, cy, wall_zc], [1, 0, 0, 0]),
-                half_size=side_half,
-                color=color,
-                name=f"{name_prefix}_wall_{tag}",
-                is_static=True,
-            ))
-
-        # front / back walls
-        fb_half = (L/2, wall_thk/2, wall_h/2)
-        for tag, y in [("F", cy - W/2 + wall_thk/2), ("B", cy + W/2 - wall_thk/2)]:
-            parts.append(create_box(
-                scene=task,
-                pose=sapien.Pose([cx, y, wall_zc], [1, 0, 0, 0]),
-                half_size=fb_half,
-                color=color,
-                name=f"{name_prefix}_wall_{tag}",
-                is_static=True,
-            ))
-
-        # ---- inner dividers (2x2 split) ----
-        # divider along y=cy (horizontal divider): long in x, thin in y
-        parts.append(create_box(
-            scene=task,
-            pose=sapien.Pose([cx, cy, wall_zc], [1, 0, 0, 0]),
-            half_size=(L/2 - wall_thk, wall_thk/2, wall_h/2),
-            color=color,
-            name=f"{name_prefix}_div_y",
-            is_static=True,
-        ))
-        # divider along x=cx (vertical divider): thin in x, long in y
-        parts.append(create_box(
-            scene=task,
-            pose=sapien.Pose([cx, cy, wall_zc], [1, 0, 0, 0]),
-            half_size=(wall_thk/2, W/2 - wall_thk, wall_h/2),
-            color=color,
-            name=f"{name_prefix}_div_x",
-            is_static=True,
-        ))
-
-        # ---- define 4 cell regions (AABBs) for “tool placed into correct cell” ----
-        # Each cell interior size (approx)
-        cell_L = L/2 - wall_thk
-        cell_W = W/2 - wall_thk
-        floor_z = cz + base_thk
-
-        # (ix,iy): 0/1 -> left/right, front/back
-        x_offsets = [-L/4, +L/4]
-        y_offsets = [-W/4, +W/4]
-
-        cell_aabbs = []
-        cell_centers = []
-        margin = 0.01  # keep away from walls for robust success checking
-
-        for xo in x_offsets:
-            for yo in y_offsets:
-                cxy = np.array([cx + xo, cy + yo])
-
-                mn = np.array([cxy[0] - cell_L/2 + margin,
-                            cxy[1] - cell_W/2 + margin,
-                            floor_z])
-                mx = np.array([cxy[0] + cell_L/2 - margin,
-                            cxy[1] + cell_W/2 - margin,
-                            floor_z + wall_h])
-                cell_aabbs.append((mn, mx))
-
-                # A convenient “place target” (a bit above floor)
-                cell_centers.append(np.array([cxy[0], cxy[1], floor_z + 0.03]))
-
-        return parts, cell_aabbs, cell_centers
-
     def load_actors(self):  
         # Create scanner at random position  
         self.scanner_q = self.quat_from_axis_angle((0, 1/math.sqrt(2), 1/math.sqrt(2)), 180)
@@ -147,13 +34,7 @@ class move_scanner_pad(Base_Task):
             convex=True,
             qpos=self.scanner_q,
         )
-        self.toolbox_parts, self.cell_aabbs, self.cell_centers = self.build_toolbox_2x2(
-            task=self,
-            center=(0.18, 0.10, 0.76),     # choose a spot on table
-            outer_xy=(0.22, 0.16),
-            wall_h=0.06,
-        )
-
+  
         # self.scanner.set_mass(0.01)  
         self.add_prohibit_area(self.scanner, padding=0.10)  
   
@@ -189,15 +70,15 @@ class move_scanner_pad(Base_Task):
             )  
   
         # Create pad as thin box  
-        # half_size = [0.06, 0.16, 0.01]   
-        # self.pad = create_box(  
-        #     scene=self,  
-        #     pose=target_rand_pose,  
-        #     half_size=half_size,  
-        #     color=(0.3, 0.3, 0.3),  
-        #     name="target_pad",  
-        #     is_static=True,  
-        # )  
+        half_size = [0.06, 0.16, 0.01]   
+        self.pad = create_box(  
+            scene=self,  
+            pose=target_rand_pose,  
+            half_size=half_size,  
+            color=(0.3, 0.3, 0.3),  
+            name="target_pad",  
+            is_static=True,  
+        )  
   
         # Add blue target marker on pad  
         self.add_target_marker_to_pad()  

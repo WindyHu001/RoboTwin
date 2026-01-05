@@ -1,0 +1,39 @@
+{
+    "full_description": "There is a screwdriver on the table. Use the arm to <grab the screwdriver at the top area> and <pick it up>.",
+    "schema": "{A} notifies the screwdriver, {a} notifies the arm to grab the screwdriver at the upper part",
+    "preference": "num of words should not exceed 10",
+    "seen": [
+      "Use {a} to grab {A} at top area, lift.",
+      "Grab {A} at the top side, pick up.",
+      "Grip {A} near the top end, lift it.",
+      "Grasp {A} on the upper area, lift.",
+      "Move {a} to {A} top area, pick up.",
+      "Hold {A} on top with {a}, raise it.",
+      "Use {a} to seize {A} near top, lift.",
+      "Target the upper part of {A}, pick up.",
+      "Clamp {A} close to the top, lift it.",
+      "Pick up {A} from the top area.",
+      "Grasp {A} at upper region, lift it.",
+      "Secure {A} at the top portion, lift.",
+      "Use {a} to pinch {A} near top, lift.",
+      "Grab {A} from the upper side, pick up.",
+      "Grip {A} at the top region, lift.",
+      "Lift {A} by holding the top area.",
+      "Take {A} at the upper end, lift.",
+      "Use {a} to hold {A} at top, lift.",
+      "Grasp {A} close to the top, raise it.",
+      "Capture {A} near the top area, lift."
+    ],
+    "unseen": [
+      "Seize {A} near top using {a}, lift.",
+      "Guide {a} to the top of {A}, pick up.",
+      "Lock {A} at the upper area, lift it.",
+      "Place {a} on the top side of {A}, lift.",
+      "Grab {A} by the top region, pick up.",
+      "Catch {A} at the upper area, then lift.",
+      "Grip {A} near top, raise it.",
+      "Move {a} to {A} upper area, lift.",
+      "Center {a} on the top area of {A}, lift.",
+      "Hold {A} at the top area, lift it."
+    ]
+  }

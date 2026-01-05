@@ -1,0 +1,144 @@
+nohup: ignoring input
+0
+02:28:47.747 [I] Running on: crosslab-OMEN-by-HP-45L-Gaming-Desktop-GT22-3xxx                     (3298824:train.py:196)
+INFO:2025-12-29 02:28:47,925:jax._src.xla_bridge:925: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+02:28:47.925 [I] Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig' (3298824:xla_bridge.py:925)
+INFO:2025-12-29 02:28:47,926:jax._src.xla_bridge:925: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+02:28:47.926 [I] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory (3298824:xla_bridge.py:925)
+02:28:48.350 [I] Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x7d626f90dfd0> (3298824:base_pytree_checkpoint_handler.py:334)
+02:28:48.350 [I] Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x7d626f90dfd0> (3298824:base_pytree_checkpoint_handler.py:334)
+02:28:48.350 [I] [thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID. (3298824:multihost.py:390)
+02:28:48.351 [I] [process=0][thread=MainThread] CheckpointManager init: checkpointers=None, item_names=None, item_handlers={'assets': <openpi.training.checkpoints.CallbackHandler object at 0x7d60ac30fd10>, 'train_state': <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7d60ac1affd0>, 'params': <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7d60ac270a10>}, handler_registry=None (3298824:checkpoint_manager.py:620)
+02:28:48.351 [I] Deferred registration for item: "assets". Adding handler `<openpi.training.checkpoints.CallbackHandler object at 0x7d60ac30fd10>` for item "assets" and save args `<class 'openpi.training.checkpoints.CallbackSave'>` and restore args `<class 'openpi.training.checkpoints.CallbackRestore'>` to `_handler_registry`. (3298824:composite_checkpoint_handler.py:234)
+02:28:48.351 [I] Deferred registration for item: "train_state". Adding handler `<orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7d60ac1affd0>` for item "train_state" and save args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>` to `_handler_registry`. (3298824:composite_checkpoint_handler.py:234)
+02:28:48.351 [I] Deferred registration for item: "params". Adding handler `<orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7d60ac270a10>` for item "params" and save args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>` to `_handler_registry`. (3298824:composite_checkpoint_handler.py:234)
+02:28:48.351 [I] Deferred registration for item: "metrics". Adding handler `<orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7d60ac18e490>` for item "metrics" and save args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>` to `_handler_registry`. (3298824:composite_checkpoint_handler.py:234)
+02:28:48.351 [I] Initialized registry DefaultCheckpointHandlerRegistry({('assets', <class 'openpi.training.checkpoints.CallbackSave'>): <openpi.training.checkpoints.CallbackHandler object at 0x7d60ac30fd10>, ('assets', <class 'openpi.training.checkpoints.CallbackRestore'>): <openpi.training.checkpoints.CallbackHandler object at 0x7d60ac30fd10>, ('train_state', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7d60ac1affd0>, ('train_state', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7d60ac1affd0>, ('params', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7d60ac270a10>, ('params', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x7d60ac270a10>, ('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7d60ac18e490>, ('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7d60ac18e490>}). (3298824:composite_checkpoint_handler.py:502)
+02:28:48.351 [I] orbax-checkpoint version: 0.11.13                                                (3298824:abstract_checkpointer.py:35)
+02:28:48.351 [I] [process=0][thread=MainThread] Using barrier_sync_fn: <function get_barrier_sync_fn.<locals>.<lambda> at 0x7d60abfdcf40> timeout: 7200 secs and primary_host=0 for async checkpoint writes (3298824:async_checkpointer.py:170)
+02:28:48.351 [I] Found 0 checkpoint steps in /home/crosslab/RoboTwin/policy/pi0.5/checkpoints/pi05_base_aloha_robotwin_lora/VG_one_task (3298824:checkpoint_manager.py:1701)
+02:28:48.351 [I] [process=0][thread=MainThread] CheckpointManager created,  primary_host=0, CheckpointManagerOptions=CheckpointManagerOptions(save_interval_steps=1, max_to_keep=1, keep_time_interval=None, keep_period=5000, should_keep_fn=None, best_fn=None, best_mode='max', keep_checkpoints_without_metrics=True, step_prefix=None, step_format_fixed_length=None, step_name_format=None, create=False, cleanup_tmp_directories=False, save_on_steps=frozenset(), single_host_load_and_broadcast=False, todelete_subdir=None, enable_background_delete=False, read_only=False, enable_async_checkpointing=True, async_options=AsyncOptions(timeout_secs=7200, barrier_sync_fn=None, post_finalization_callback=None, create_directories_asynchronously=True), multiprocessing_options=MultiprocessingOptions(primary_host=0, active_processes=None, barrier_sync_key_prefix=None), should_save_fn=None, file_options=FileOptions(path_permission_mode=None), save_root_metadata=True, temporary_path_class=None, save_decision_policy=None, prevent_write_metrics=False), root_directory=/home/crosslab/RoboTwin/policy/pi0.5/checkpoints/pi05_base_aloha_robotwin_lora/VG_one_task: <orbax.checkpoint.checkpoint_manager.CheckpointManager object at 0x7d60ac329c50> (3298824:checkpoint_manager.py:801)
+wandb: Currently logged in as: zhaofeng-hu (zhaofeng-hu-stony-brook-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.19.11
+wandb: Run data is saved locally in /home/crosslab/RoboTwin/policy/pi0.5/wandb/run-20251229_022848-ppt3m96d
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run VG_one_task
+wandb: ⭐️ View project at https://wandb.ai/zhaofeng-hu-stony-brook-university/openpi
+wandb: 🚀 View run at https://wandb.ai/zhaofeng-hu-stony-brook-university/openpi/runs/ppt3m96d
+02:28:49.637 [I] Loaded norm stats from /home/crosslab/RoboTwin/policy/pi0.5/assets/pi05_base_aloha_robotwin_lora/VG_one_task_repo (3298824:config.py:195)
+02:28:49.638 [I] data_config: DataConfig(repo_id='VG_one_task_repo', asset_id='VG_one_task_repo', norm_stats={'state': NormStats(mean=array([-0.28631452, -1.02821648, -0.87218732, -0.46740368, -0.04806591,
+       -0.25734705,  0.58847487,  0.20440342, -0.76230192, -0.65231043,
+       -0.37035674,  0.07339071,  0.20745298,  0.68597943]), std=array([0.29953459, 1.07774138, 0.9321028 , 0.4967224 , 0.08443794,
+       0.28006521, 0.728517  , 0.28042868, 1.03839946, 0.91751003,
+       0.51325178, 0.11302314, 0.28732178, 0.64137363]), q01=array([-8.11931702e-01, -2.79231284e+00, -3.06164535e+00, -1.66449052e+00,
+       -3.70339613e-01, -7.73387555e-01, -1.07986557e+00, -1.45009346e-05,
+       -2.88782542e+00, -3.18073974e+00, -1.76176339e+00, -2.07281733e-03,
+       -4.87006837e-04, -1.07986557e+00]), q99=array([-2.70542393e-05, -6.32174063e-04, -6.90025997e-04, -3.38586354e-04,
+        9.51573826e-02,  2.01771113e-02,  9.45247679e-01,  7.77265678e-01,
+       -6.39323759e-04, -7.06203318e-04, -3.63325095e-04,  4.39031741e-01,
+        8.01067391e-01,  9.45247679e-01])), 'actions': NormStats(mean=array([-0.02169357, -0.07404976, -0.06706069, -0.03885617, -0.00383401,
+       -0.02021382,  0.50421172,  0.01565294, -0.05403208, -0.04915047,
+       -0.02981603,  0.00515598,  0.01595717,  0.62429559]), std=array([0.05446779, 0.18481417, 0.17157514, 0.11772969, 0.01565945,
+       0.05588568, 0.82041556, 0.0473953 , 0.1608327 , 0.15454543,
+       0.10919742, 0.0207873 , 0.05073661, 0.72630304]), q01=array([-0.2485445 , -0.83398203, -0.76697669, -0.45825567, -0.07121472,
+       -0.26070085, -1.16890001, -0.03348021, -0.78873967, -0.73418032,
+       -0.4600577 , -0.02034857, -0.03731739, -1.16890001]), q99=array([0.02344476, 0.12303203, 0.1528285 , 0.26046497, 0.02417849,
+       0.02847308, 0.94297757, 0.22849637, 0.09568754, 0.18191731,
+       0.2562433 , 0.10284373, 0.24815826, 0.94297757]))}, repack_transforms=Group(inputs=[RepackTransform(structure={'images': {'cam_high': 'observation.images.cam_high', 'cam_left_wrist': 'observation.images.cam_left_wrist', 'cam_right_wrist': 'observation.images.cam_right_wrist'}, 'state': 'observation.state', 'actions': 'action', 'prompt': 'prompt'})], outputs=()), data_transforms=Group(inputs=(AlohaInputs(adapt_to_pi=True), DeltaActions(mask=(True, True, True, True, True, True, False, True, True, True, True, True, True, False))), outputs=(AbsoluteActions(mask=(True, True, True, True, True, True, False, True, True, True, True, True, True, False)), AlohaOutputs(adapt_to_pi=True))), model_transforms=Group(inputs=[InjectDefaultPrompt(prompt=None), ResizeImages(height=224, width=224), TokenizePrompt(tokenizer=<openpi.models.tokenizer.PaligemmaTokenizer object at 0x7d60ac263590>, discrete_state_input=False), PadStatesAndActions(model_action_dim=32)], outputs=()), use_quantile_norm=True, action_sequence_keys=('action',), prompt_from_task=True, rlds_data_dir=None, action_space=None, filter_dict_path=None) (3298824:data_loader.py:243)
+02:28:49.774 [I] local_batch_size: 16                                                             (3298824:data_loader.py:324)
+02:28:55.957 [I] Initialized data loader:
+[0].images['base_0_rgb']: (16, 224, 224, 3)@float32
+[0].images['left_wrist_0_rgb']: (16, 224, 224, 3)@float32
+[0].images['right_wrist_0_rgb']: (16, 224, 224, 3)@float32
+[0].image_masks['base_0_rgb']: (16,)@bool
+[0].image_masks['left_wrist_0_rgb']: (16,)@bool
+[0].image_masks['right_wrist_0_rgb']: (16,)@bool
+[0].state: (16, 32)@float32
+[0].tokenized_prompt: (16, 200)@int32
+[0].tokenized_prompt_mask: (16, 200)@bool
+[1]: (16, 10, 32)@float32 (3298824:train.py:227)
+02:28:56.696 [I] Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x7d626f90dfd0> (3298824:base_pytree_checkpoint_handler.py:334)
+02:28:56.714 [I] Restoring checkpoint from /home/crosslab/.cache/openpi/openpi-assets/checkpoints/pi05_base/params. (3298824:checkpointer.py:298)
+02:29:06.212 [I] [process=0] /jax/checkpoint/read/bytes_per_sec: 1.3 GiB/s (total bytes: 12.5 GiB) (time elapsed: 9 seconds) (per-host) (3298824:base_pytree_checkpoint_handler.py:114)
+02:29:06.213 [I] Finished restoring checkpoint in 9.50 seconds from /home/crosslab/.cache/openpi/openpi-assets/checkpoints/pi05_base/params. (3298824:checkpointer.py:309)
+02:29:17.295 [I] Initialized train state:
+['PaliGemma']['img']['Transformer']['encoder_norm']['bias'].value: (1152,)@float32
+['PaliGemma']['img']['Transformer']['encoder_norm']['scale'].value: (1152,)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_0']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_0']['scale'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_1']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_1']['scale'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['bias'].value: (27, 4304)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['kernel'].value: (27, 1152, 4304)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['kernel'].value: (27, 4304, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['bias'].value: (27, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['kernel'].value: (27, 1152, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['kernel'].value: (27, 16, 72, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['bias'].value: (27, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['kernel'].value: (27, 1152, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['bias'].value: (27, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['kernel'].value: (27, 1152, 16, 72)@float32
+['PaliGemma']['img']['embedding']['bias'].value: (1152,)@float32
+['PaliGemma']['img']['embedding']['kernel'].value: (14, 14, 3, 1152)@float32
+['PaliGemma']['img']['head']['bias'].value: (2048,)@float32
+['PaliGemma']['img']['head']['kernel'].value: (1152, 2048)@float32
+['PaliGemma']['img']['pos_embedding'].value: (1, 256, 1152)@float32
+['PaliGemma']['llm']['embedder']['input_embedding'].value: (257152, 2048)@bfloat16
+['PaliGemma']['llm']['final_norm']['scale'].value: (2048,)@bfloat16
+['PaliGemma']['llm']['final_norm_1']['Dense_0']['bias'].value: (3072,)@bfloat16
+['PaliGemma']['llm']['final_norm_1']['Dense_0']['kernel'].value: (1024, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['lora_a'].value: (18, 8, 256, 16)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['lora_b'].value: (18, 8, 16, 2048)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['w'].value: (18, 8, 256, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_a'].value: (18, 8, 256, 32)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_b'].value: (18, 8, 32, 1024)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['w'].value: (18, 8, 256, 1024)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['kv_einsum']['lora_a'].value: (18, 2, 1, 2048, 16)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum']['lora_b'].value: (18, 2, 1, 16, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum']['w'].value: (18, 2, 1, 2048, 256)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['lora_a'].value: (18, 2, 1, 1024, 32)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['lora_b'].value: (18, 2, 1, 32, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['w'].value: (18, 2, 1, 1024, 256)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['q_einsum']['lora_a'].value: (18, 8, 2048, 16)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum']['lora_b'].value: (18, 8, 16, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum']['w'].value: (18, 8, 2048, 256)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_a'].value: (18, 8, 1024, 32)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_b'].value: (18, 8, 32, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['w'].value: (18, 8, 1024, 256)@bfloat16
+['PaliGemma']['llm']['layers']['mlp']['gating_einsum'].value: (18, 2, 2048, 16384)@bfloat16
+['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_a'].value: (18, 2, 2048, 16)@float32
+['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_b'].value: (18, 2, 16, 16384)@float32
+['PaliGemma']['llm']['layers']['mlp']['linear'].value: (18, 16384, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['mlp']['linear_lora_a'].value: (18, 16384, 16)@float32
+['PaliGemma']['llm']['layers']['mlp']['linear_lora_b'].value: (18, 16, 2048)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum'].value: (18, 2, 1024, 4096)@bfloat16
+['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_a'].value: (18, 2, 1024, 32)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_b'].value: (18, 2, 32, 4096)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['linear'].value: (18, 4096, 1024)@bfloat16
+['PaliGemma']['llm']['layers']['mlp_1']['linear_lora_a'].value: (18, 4096, 32)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['linear_lora_b'].value: (18, 32, 1024)@float32
+['PaliGemma']['llm']['layers']['pre_attention_norm']['scale'].value: (18, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['pre_attention_norm_1']['Dense_0']['bias'].value: (18, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['pre_attention_norm_1']['Dense_0']['kernel'].value: (18, 1024, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['pre_ffw_norm']['scale'].value: (18, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['pre_ffw_norm_1']['Dense_0']['bias'].value: (18, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['pre_ffw_norm_1']['Dense_0']['kernel'].value: (18, 1024, 3072)@bfloat16
+['action_in_proj']['bias'].value: (1024,)@float32
+['action_in_proj']['kernel'].value: (32, 1024)@float32
+['action_out_proj']['bias'].value: (32,)@float32
+['action_out_proj']['kernel'].value: (1024, 32)@float32
+['time_mlp_in']['bias'].value: (1024,)@float32
+['time_mlp_in']['kernel'].value: (1024, 1024)@float32
+['time_mlp_out']['bias'].value: (1024,)@float32
+['time_mlp_out']['kernel'].value: (1024, 1024)@float32 (3298824:train.py:238)
+02:29:17.300 [I] Progress on: -/30000 rate:- remaining:? elapsed:00:00 postfix:-                  (3298824:tqdm_logging.py:145)
+02:29:27.767 [I] Progress on: 4.00it/30.0kit rate:2.1s/it remaining:17:17:46 elapsed:00:10 postfix:- (3298824:tqdm_logging.py:145)
+02:29:39.198 [I] Progress on: 11.0it/30.0kit rate:1.7s/it remaining:13:50:35 elapsed:00:21 postfix:- (3298824:tqdm_logging.py:145)
+02:29:50.620 [I] Progress on: 18.0it/30.0kit rate:1.6s/it remaining:13:36:32 elapsed:00:33 postfix:- (3298824:tqdm_logging.py:145)
+02:30:02.060 [I] Progress on: 25.0it/30.0kit rate:1.6s/it remaining:13:36:43 elapsed:00:44 postfix:- (3298824:tqdm_logging.py:145)
+02:30:13.516 [I] Progress on: 32.0it/30.0kit rate:1.6s/it remaining:13:37:26 elapsed:00:56 postfix:- (3298824:tqdm_logging.py:145)
+02:30:24.991 [I] Progress on: 39.0it/30.0kit rate:1.6s/it remaining:13:39:03 elapsed:01:07 postfix:- (3298824:tqdm_logging.py:145)
+02:30:36.478 [I] Progress on: 46.0it/30.0kit rate:1.6s/it remaining:13:39:35 elapsed:01:19 postfix:- (3298824:tqdm_logging.py:145)
+Terminated

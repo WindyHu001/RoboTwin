@@ -727,7 +727,7 @@ _CONFIGS = [
         # If your dataset already uses pure delta actions *without* the extra transform,
         # you can set this to False.
         data=LeRobotAlohaDataConfig(
-            repo_id="VG_two_contact_repo",
+            repo_id="LG_pick_repo",
             base_config=DataConfig(
                 # local_files_only=True,
                 prompt_from_task=True,
@@ -747,7 +747,7 @@ _CONFIGS = [
             # #   norm stats
             assets=AssetsConfig(
                 assets_dir="/home/crosslab/RoboTwin/policy/pi0.5/assets/pi05_base_aloha_robotwin_lora",  #  norm.json 
-                asset_id="VG_two_contact_repo",                         # repo_id
+                asset_id="LG_pick_repo",                         # repo_id
             ),
         ),
 

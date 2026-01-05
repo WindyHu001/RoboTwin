@@ -1,0 +1,40 @@
+{
+    "full_description": "There is a hammer on the table. Use the arm to <grab the hammer at the bottom area of the handle> and <pick it up>.",
+    "schema": "{A} notifies the hammer, {a} notifies the arm to grab the hammer at the lower part of the handle",
+    "preference": "num of words should not exceed 10",
+    "seen": [
+      "Use {a} to grab {A} at lower handle, lift.",
+      "Grab {A} near handle bottom, pick up.",
+      "Grip {A} at the handle base, lift it.",
+      "Grasp {A} on the lower handle area, lift.",
+      "Move {a} to {A} handle bottom, pick up.",
+      "Hold {A} low on handle with {a}, raise it.",
+      "Use {a} to seize {A} at handle bottom, lift.",
+      "Target the lower end of {A} handle, pick up.",
+      "Clamp {A} at the handle base area, lift.",
+      "Pick up {A} from the handle bottom.",
+      "Grasp {A} at lower handle region, lift it.",
+      "Secure {A} near the handle base, lift.",
+      "Use {a} to pinch {A} at lower handle, lift.",
+      "Grab {A} from the handle base, pick up.",
+      "Grip {A} at the low handle zone, lift.",
+      "Lift {A} by holding the handle base.",
+      "Take {A} at handle bottom, lift.",
+      "Use {a} to hold {A} low on handle, lift.",
+      "Grasp {A} close to handle end, raise it.",
+      "Capture {A} at the bottom of handle, lift."
+    ],
+    "unseen": [
+      "Seize {A} near handle bottom using {a}, lift.",
+      "Guide {a} to the handle base of {A}, pick up.",
+      "Lock {A} at the lower handle, lift it.",
+      "Place {a} on the handle bottom of {A}, lift.",
+      "Grab {A} by the handle base region, pick up.",
+      "Catch {A} at the low handle end, then lift.",
+      "Grip {A} at handle bottom, raise it.",
+      "Move {a} to {A} lower handle, lift.",
+      "Center {a} on {A} handle base, lift.",
+      "Hold {A} at the handle bottom, lift it."
+    ]
+  }
+  

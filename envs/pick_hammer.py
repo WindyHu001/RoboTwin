@@ -23,7 +23,7 @@ class pick_hammer(Base_Task):
             xlim=[-0.1, 0.1],
             ylim=[-0.1, 0.1],
             zlim=[0.783,0.783],
-            modelname="020_hammer_train_top",
+            modelname="020_hammer_train_mid",
             rotate_rand=True,
             rotate_lim=[0, 1, 0],
             qpos=[0, 0, 0.995, 0.105],
